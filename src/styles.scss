@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+#main {
+   background: linear-gradient(50deg, black, rgb(67, 0, 67));
+   background-size: 400% 400%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   animation: gradient 10s ease infinite;
+   overflow-x: hidden;
+}
+
+@keyframes gradient {
+   0% {
+      background-position: 0% 50%;
+   }
+
+   50% {
+      background-position: 100% 50%;
+   }
+
+   100% {
+      background-position: 0% 50%;
+   }
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');

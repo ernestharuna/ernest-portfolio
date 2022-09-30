@@ -1,0 +1,51 @@
+header {
+   background-color: rgba(255, 255, 255, 0.1) !important;
+   border: 0px solid rgba(255, 255, 255, 0.5);
+   border-radius: 15px;
+   backdrop-filter: blur(20px);
+   border: 1px solid rgb(62, 61, 61);
+   margin: 0 50px;
+   margin-top: 3%;
+   padding: 15px 40px;
+   color: white;
+   position: sticky;
+   top: 20px;
+   z-index: 2;
+}
+
+h1 {
+   font-size: 18px;
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+nav > div {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+a {
+   display: inline-block;
+   margin-right: 20px;
+   text-decoration: none;
+   color: beige;
+}
+
+.toggler {
+   display: none;
+}
+
+@media screen and (max-width: 760px) {
+   header {
+      margin: 0 20px;
+      padding: 15px 20px
+   }
+   .toggler {
+      display: block;
+   }
+
+   .nav-list {
+      display: none;
+   }
+}

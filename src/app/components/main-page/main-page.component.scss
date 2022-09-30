@@ -1,0 +1,160 @@
+h2 {
+   font-size: 5rem;
+   font-weight: 900;
+}
+
+h2 span.gradient-bg {
+   background: -webkit-linear-gradient(45deg, purple, red);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   // animation: grad 10s ease infinite;
+}
+
+section {
+   padding: 15px 40px;
+   margin: 30px 50px;
+   color: white;
+}
+
+section.first {
+   margin-top: 5%;
+   min-height: 50vh;
+}
+
+section.first a {
+   text-decoration: none;
+   letter-spacing: 2px;
+   font-size: 12px;
+   display: inline-block;
+}
+
+p {
+   font-size: 12px;
+   letter-spacing: 1px;
+}
+
+i {
+   display: inline-block;
+   font-size: large;
+   text-shadow: 5px 5px 5px black;
+   color: rgba(255, 255, 255, 0.5)
+}
+.bi {
+   transition: .2s ease-in-out;
+}
+.bi-linkedin:hover {
+   color: rgb(33, 33, 166);
+   transform: scale(1.5, 1.5);
+   transition: .2s ease-in-out;
+}
+.bi-whatsapp:hover {
+   color: green;
+   transform: scale(1.5, 1.5);
+   transition: .2s ease-in-out;
+}
+.bi-facebook:hover {
+   color: rgb(0, 123, 255);
+   transform: scale(1.5, 1.5);
+   transition: .2s ease-in-out;
+}
+.bi-twitter:hover {
+   color: rgb(0, 123, 255);
+   transform: scale(1.5, 1.5);
+   transition: .2s ease-in-out;
+}
+
+a.proj::after {
+   content: "";
+   display: block;
+   width: 50px;
+   padding-top: 3px;
+   border-bottom: 2px solid #f9dd94;
+   transition: all 0.5s;
+}
+
+a:hover {
+   &::after {
+      width: 100%;
+   }
+}
+
+.heart {
+   display: inline-block;
+   position: relative;
+   top: 15px;
+   animation: hovering 2.5s ease infinite;
+}
+
+.ani {
+   // display: none;
+   position: absolute;
+   font-size: 25rem;
+   right: -24%;
+   top: 49%;
+   color: rgba(0, 0, 0, 0.2);
+   overflow-x: hidden;
+   animation: rotator 20s ease-out infinite;
+}
+
+.connect-icon {
+   display: inline-block;
+   margin: 0 20px 0 0;
+}
+
+@media screen and (max-width: 760px) {
+   h2 {
+      font-size: 3rem;
+   }
+
+   section.first {
+      min-height: 50vh;
+   }
+
+   section {
+      margin: 10px 25px;
+      padding: 15px 5px
+   }
+
+   .ani {
+      font-size: 15rem;
+      right: -40%;
+      overflow-x: hidden;
+   }
+}
+
+@keyframes hovering {
+   0% {
+      top: 0px;
+   }
+
+   50% {
+      top: -15px;
+   }
+
+   100% {
+      top: 0px;
+   }
+}
+
+@keyframes rotator {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   25% {
+      transform: rotate(90deg);
+   }
+
+   50% {
+      transform: rotate(180deg);
+   }
+
+   75% {
+      transform: rotate(270deg);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}
