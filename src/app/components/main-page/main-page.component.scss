@@ -12,6 +12,10 @@ h2 span.gradient-bg {
    animation: grad 10s ease infinite;
 }
 
+h3 {
+   font-family: "Trirong", serif;
+}
+
 section {
    padding: 15px 40px;
    margin: 30px 50px;
@@ -49,25 +53,30 @@ i {
 .bi-linkedin:hover {
    color: rgb(33, 33, 166);
    transform: scale(1.5, 1.5);
-   transition: .2s ease-in-out;
+   transition: .2s ease;
 }
 
 .bi-whatsapp:hover {
    color: green;
    transform: scale(1.5, 1.5);
-   transition: .2s ease-in-out;
+   transition: .2s ease;
 }
 
 .bi-facebook:hover {
    color: rgb(0, 123, 255);
    transform: scale(1.5, 1.5);
-   transition: .2s ease-in-out;
+   transition: .2s ease;
 }
 
 .bi-twitter:hover {
    color: rgb(0, 123, 255);
    transform: scale(1.5, 1.5);
-   transition: .2s ease-in-out;
+   transition: .2s ease;
+}
+.bi-github:hover {
+   color: rgb(137, 5, 124);
+   transform: scale(1.5, 1.5);
+   transition: .2s ease;
 }
 
 a.proj::after {
