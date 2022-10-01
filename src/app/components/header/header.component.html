@@ -4,10 +4,19 @@
          <h1>Ernest Haruna</h1>
          <div class="nav-list">
             <a href="#projects">Project</a>
-            <a href="#">Connect</a>
-            <a href="#">My profile</a>
+            <a href="#connect">Connect</a>
+            <a href="https://github.com/Ernesto-da-great/ernest-portfolio" target="_blank" rel="noopener">Source code</a>
          </div>
-         <div class="toggler">⚙</div>
+         <div class="toggler" (click)="myfunc()">⚙</div>
       </div>
    </nav>
 </header>
+
+<!-- nav for mobile devices -->
+<section [ngClass]="{hidder: toggle}">
+   <div class="lower-nav">
+      <span class="item">Project</span>
+      <span class="item">Connect</span>
+      <span class="item">Source code</span>
+   </div>
+</section>

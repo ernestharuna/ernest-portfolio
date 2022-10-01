@@ -11,6 +11,11 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  myfunc(){
+    this.toggle = !this.toggle
+  }
+  toggle = true;
+
   ngOnInit(): void {
     VanillaTilt.init(document.querySelectorAll(".head"), {
       max: 10,

@@ -4,11 +4,12 @@ h2 {
 }
 
 h2 span.gradient-bg {
-   background: -webkit-linear-gradient(45deg, purple, red);
+   background: -webkit-linear-gradient(45deg, purple 20%, red 40%, #f9dd94, purple);
    -webkit-background-clip: text;
    background-clip: text;
    -webkit-text-fill-color: transparent;
-   // animation: grad 10s ease infinite;
+   background-size: 200% auto;
+   animation: grad 10s ease infinite;
 }
 
 section {
@@ -40,24 +41,29 @@ i {
    text-shadow: 5px 5px 5px black;
    color: rgba(255, 255, 255, 0.5)
 }
+
 .bi {
-   transition: .2s ease-in-out;
+   transition: 2s ease-in-out;
 }
+
 .bi-linkedin:hover {
    color: rgb(33, 33, 166);
    transform: scale(1.5, 1.5);
    transition: .2s ease-in-out;
 }
+
 .bi-whatsapp:hover {
    color: green;
    transform: scale(1.5, 1.5);
    transition: .2s ease-in-out;
 }
+
 .bi-facebook:hover {
    color: rgb(0, 123, 255);
    transform: scale(1.5, 1.5);
    transition: .2s ease-in-out;
 }
+
 .bi-twitter:hover {
    color: rgb(0, 123, 255);
    transform: scale(1.5, 1.5);
@@ -79,6 +85,21 @@ a:hover {
    }
 }
 
+a.other {
+   display: inline-block;
+   background: #f9dd94;
+   padding: 5px;
+   box-shadow: 5px 5px 0 black;
+   color: rgb(67, 0, 67);
+   font-weight: 700;
+   text-decoration: none;
+   border-radius: 5px;
+   transition: .2s ease;
+   &:hover{
+      box-shadow: none;
+   }
+}
+
 .heart {
    display: inline-block;
    position: relative;
@@ -88,13 +109,14 @@ a:hover {
 
 .ani {
    // display: none;
-   position: absolute;
+   position: fixed;
    font-size: 25rem;
-   right: -24%;
-   top: 49%;
+   right: -20%;
+   top: 45%;
    color: rgba(0, 0, 0, 0.2);
    overflow-x: hidden;
    animation: rotator 20s ease-out infinite;
+   z-index: -3;
 }
 
 .connect-icon {
@@ -114,6 +136,10 @@ a:hover {
    section {
       margin: 10px 25px;
       padding: 15px 5px
+   }
+
+   section.last-section {
+      margin-bottom: 25px;
    }
 
    .ani {
@@ -156,5 +182,11 @@ a:hover {
 
    100% {
       transform: rotate(360deg);
+   }
+}
+
+@keyframes grad {
+   to {
+      background-position: 200% center;
    }
 }
