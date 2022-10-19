@@ -43,22 +43,40 @@ a {
    display: none;
 }
 
-.hidder {
+.show {
    display: none;
-   animation: ghost 2s ease-in-out infinite;
 }
 
-@keyframes ghost {
+@keyframes coming {
    0% {
-      opacity: 0;
-   }
-
-   50% {
-      opacity: 0.5;
+      transform: translateY(-700px);
+      opacity: 0.45;
    }
 
    100% {
+      transform: translateY(0px);
       opacity: 1;
+   }
+}
+
+@keyframes go {
+   0% {
+      transform: translateY(0px);
+      opacity: 1;
+   }
+
+   50% {
+      transform: translateY(-300px);
+      opacity: 0.7;
+   }
+
+   75% {
+      transform: translateY(-600px);
+      opacity: 0;
+   }
+
+   100%{
+      display: none;
    }
 }
 
@@ -100,6 +118,7 @@ a {
       backdrop-filter: blur(20px);
       padding: 15px 40px;
       color: white;
+      animation: coming 2s ease;
    }
 
    .lower-nav .item {
