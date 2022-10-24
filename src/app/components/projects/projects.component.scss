@@ -98,6 +98,24 @@ section {
    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
+.skills {
+   margin: 10px 0;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.skills img {
+   margin: 0 10px 10px 0;
+   width: 30px;
+   height: auto;
+   
+   transition: .2s ease;
+   &:hover {
+      transform: scale(1.09, 1.09);
+      filter: brightness(1);
+   }
+}
+
 @media screen and (max-width: 760px) {
    section {
       margin: 10px 25px;

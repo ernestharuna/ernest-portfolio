@@ -18,9 +18,9 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     VanillaTilt.init(document.querySelectorAll(".head"), {
-      max: 10,
-      speed: 400,
-      glare: true,
+      max: 5,
+      speed: 500,
+      glare: false,
       "max-glare": 1
     });
   }

@@ -8,6 +8,25 @@
    overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+   width: 10px;
+   transition: .3s ease;
+}
+
+::-webkit-scrollbar-track {
+   background: rgb(67, 0, 67);
+}
+
+::-webkit-scrollbar-thumb {
+   background: #f9dd94;
+   border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: red;
+   transition: .3s ease;
+}
+
 @keyframes gradient {
    0% {
       background-position: 0% 50%;

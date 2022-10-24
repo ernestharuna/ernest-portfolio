@@ -1,0 +1,36 @@
+hr {
+   opacity: 1;
+   background: linear-gradient(90deg, purple, green, #f9dd94, purple, red);
+   height: 2px;
+   margin: 0;
+   background-size: 400% 400%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   animation: gradient 5s ease infinite;
+
+}
+
+footer {
+   background: none;
+   font-size: 11px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 8px 40px;
+   margin: 5px 50px;
+   color: white;
+}
+
+footer h4 {
+   font-size: 11px;
+   margin: 0;
+}
+
+
+
+@media screen and (max-width: 760px) {
+   footer {
+      margin: 1px 25px;
+      padding: 5px 5px;
+   }
+}
